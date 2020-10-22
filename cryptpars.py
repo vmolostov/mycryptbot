@@ -53,7 +53,7 @@ class Bot:
 
     def for_tg_bot(self, message):
         for item in self.crypto_parse():
-            if re.search(message.title(), item['Валюта']):
+            if re.search(message.title(), item['Валюта'].title()):
                 return self.pretty_print(item)
         return "I don't understand what currency information you want to request." + '\n' + "Try entering the name again!"
 
