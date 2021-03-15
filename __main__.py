@@ -1,7 +1,7 @@
 import telebot
 import cryptpars
 
-bot = telebot.TeleBot('1204854233:AAGbmgGu-GDF6lYsLVRq4enimUYopB6Pu_E')
+bot = telebot.TeleBot(TOKEN)
 
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard1.row('Посмотреть список доступных криптовалют')
